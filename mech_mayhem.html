@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mech Mayhem</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Taylor Bromley</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<!-- <li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li> -->
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Mech Mayhem</h1>
+
+							<header>
+								<p>Watch the gameplay demonstration <a href="https://youtu.be/qjs7hPxgt4A" target="_blank">here</a> on YouTube.</p>
+								<p>View the GitHub repository for this project <a href="https://github.com/Zoratio/Mech_Mayhem" target="_blank">here</a>.</p>
+							</header>
+
+							<hr />
+
+							<span class="image main"><img src="images/mech_mayhem/mech_mayhem_gameplay_img1.jpg" alt="" /></span>
+							<h2>Game Overview</h2>
+							<p>Mech Mayhem is a 3D tower defense game that uses Breadth First Search algorithm to find the shortest path. 
+								The project was made in Unity while learning an online course. 
+								The objective of the game is to survive the enemy attack for as long as possible.</p>
+							
+							<hr />
+
+							<h2>BFS Path Finding</h2>
+							<span class="image main2"><img src="images/mech_mayhem/mech_mayhem_gameplay_img2.jpg" alt="" /></span>
+							<p>At the start of the game, the Pathfinder script will start from the beginning waypoint and search through all the other waypoints that are connected in a BFS algorithm style. 
+								This is not only to see if it's possible to reach the end, but find the quickest path to it. 
+								Once the quickest path is found, that will be the route the enemies will take to try and destroy your base.</p>
+
+							<hr />
+
+							<h2>Towers</h2>
+							<span class="image main2"><img src="images/mech_mayhem/mech_mayhem_gameplay_img3.jpg" alt="" /></span>
+							<p>A TowerFactory script is used to determine the maximum number of towers that can be placed at once. 
+								It will also either instantiate a new tower on the selected waypoint, providing that it's a legal move, or moves the longest existing tower to the new position. 
+								Before attacking, the tower will check for the closest enemy and will then start firing a particle emission towards the target.</p>
+							
+							<hr />
+
+							<h2>Learning Experiences</h2>
+							<p>Though I already had a very good understanding of searching algorithms such as path finding from various modules at University, it was good to be able to put it into practise in a Unity project.</p>
+							<p>Example coding areas involved:</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>BFS Path Finding</li>
+												<li>Lists</li>
+												<li>Ingame object moving</li>
+												<li>Weapons and ammos</li>
+											</ul>										
+										</div>
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Automatic weapon targeting</li>
+												<li>Particle systems</li>
+												<li>Grid Positions</li>
+												<li>Edit mode scripts</li>
+											</ul>										
+										</div>										
+									</div>
+							
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- <section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section> -->
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+									<li><a href="https://github.com/Zoratio" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<!-- <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li> -->
+									<!-- <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> -->
+									<li><a href="mailto:taylorbromley@sky.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

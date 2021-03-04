@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Land Invaders</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Taylor Bromley</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<!-- <li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li> -->
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Land Invaders</h1>
+
+							<header>
+								<p>Watch the gameplay demonstration <a href="https://youtu.be/p15D1Lxt9q4" target="_blank">here</a> on YouTube.</p>
+								<p>View the GitHub repository for this project <a href="https://github.com/Zoratio/Land_Invaders_Game" target="_blank">here</a>.</p>
+							</header>
+
+							<hr />
+
+							<span class="image main"><img src="images/land_invaders/land_invaders_gameplay_img.jpg" alt="" /></span>
+							<h2>Game Overview</h2>
+							<p>Land Invaders is a 3D rail shooter flying game. 
+								This project was made in Unity while learning an online course. 
+								The objective of the game is to survive the level while killing as many alien ships as possible.</p>
+							
+							<hr />
+
+							<h2>Movement</h2>
+							<span class="image main2"><img src="images/land_invaders/land_invaders_gameplay_img2.jpg" alt="" /></span>
+							<p>There were lots of factors that needed to be considered when determining the position of the ship relative to the camera. 
+								The horizontal and vertical input manager GetAxis with the ships speed gave the two Offsets. 
+								With these values combined with the current position, it was possible to find the new desired location (if it exceeded the rail range, it would only return the maximum value). However, I needed to use an euler for the rotation values of the ship's pitch and roll for when it's changing position. 
+								Also, the angle of the ship needed to be altered so that it appeared to always be following the rail, no matter its position.</p>
+
+							<hr />
+
+							<h2>Timeline</h2>
+							<span class="image main2"><img src="images/land_invaders/land_invaders_gameplay_img3.jpg" alt="" /></span>
+							<p>A timeline was used to cue all the enemy ships animations and the overall rail animation for the player movement. Trying to edit the animation curves to work smoothly around the map took a great deal of time.</p>
+							
+							<hr />
+
+							<h2>Learning Experiences</h2>
+							<p>Learning how to make a plane/spaceship move in a realistic way was very interesting and beneficial. Also, learning how to have timeline animations for enemy waves can be used it various other games.</p>
+							<p>Example coding areas involved:</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Timeline and Animation curves</li>
+												<li>Cross platform input manager</li>
+												<li>Particle systems</li>
+												<li>Coroutines</li>
+											</ul>										
+										</div>
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Flying movement</li>
+												<li>Vertor3</li>
+												<li>Lerp</li>
+												<li>Local euler angles</li>
+											</ul>										
+										</div>										
+									</div>
+							
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- <section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section> -->
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+									<li><a href="https://github.com/Zoratio" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<!-- <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li> -->
+									<!-- <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> -->
+									<li><a href="mailto:taylorbromley@sky.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

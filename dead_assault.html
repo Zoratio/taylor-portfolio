@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dead Assault</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Taylor Bromley</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<!-- <li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li> -->
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Dead Assault</h1>
+							<header>
+								<p>Watch the gameplay demonstration <a href="https://youtu.be/7e-t_ImgNKg" target="_blank">here</a> on YouTube.</p>
+								<p>View the GitHub repository for this project <a href="https://github.com/Zoratio/Dead_Assault" target="_blank">here</a>.</p>
+							</header>
+
+							<hr />
+
+							<span class="image main"><img src="images/dead_assault/dead_assault_gameplay_img1.jpg" alt="" /></span>
+							<h2>Game Overview</h2>
+							<p>Dead Assault is a 3D first-person shooter game. 
+								The project was made in Unity while learning an online course. 
+								The objective of the game is to clear the level of all zombies that have taken over an abandoned mansion.</p>
+							
+							<hr />
+
+							<h2>Zombies</h2>
+							<span class="image main2"><img src="images/dead_assault/dead_assault_gameplay_img5.jpg" alt="" /></span>
+							<p>The zombies use a humanoid rig with different animation states to match the behaviour of a zombie. 
+								Navigation area has been baked to define where the zombies can move around. 
+								The provoked state can be triggered either by the character getting too close to the enemy or by taking damage. 
+								Once the enemy gets within its attacking range, the attack animation will begin and if the player is still within range at the point of strike in the animation, the player will take damage. 
+								To ensure the enemy attack animation is always facing the players direction, a FaceTarget method is used. 
+								Once the zombies health has reached 0 or below, a death animation will trigger depending on if they were moving or stationary at the time of death.</p>
+
+							<hr />
+
+							<h2>Weapon System</h2>
+							<span class="image main2"><img src="images/dead_assault/dead_assault_gameplay_img3.jpg" alt="" /></span>
+							<p>There are 3 different weapons, all with different ammo types and characteristics. 
+								A WeaponSwitcher script takes both keyboard number and mouse scroll wheel to determine which gun to have out. 
+								Raycasts are used to fire the gun and determine what it hit. 2/3 of the guns are capable of aiming down sight which uses lerp to change the transform values. 
+								An enum class is used for the different ammo types so when the player walks over the pickup, the correct type is increased.</p>
+							
+							<hr />
+
+							<h2>Learning Experiences</h2>
+							<span class="image main2"><img src="images/dead_assault/dead_assault_gameplay_img4.jpg" alt="" /></span>
+							<p>This project really helped with gaining a good understanding of how to implement a weapon system into a game and how to have all the components interact with each other. 
+								It also improved my knowledge of character animation states and rigging.</p>
+							<p>Example coding areas involved:</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Enemy animation states</li>
+												<li>Raycasting</li>
+												<li>Enums</li>
+												<li>Weapons and ammos</li>
+											</ul>										
+										</div>
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Enemy navigation areas</li>
+												<li>Particle systems</li>
+												<li>Device inputs</li>
+												<li>Pickups</li>
+											</ul>										
+										</div>										
+									</div>
+							
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- <section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section> -->
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+									<li><a href="https://github.com/Zoratio" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<!-- <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li> -->
+									<!-- <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> -->
+									<li><a href="mailto:taylorbromley@sky.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
